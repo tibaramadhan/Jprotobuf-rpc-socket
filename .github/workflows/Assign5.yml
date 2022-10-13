@@ -8,7 +8,7 @@ jobs:
         - name: Checkout  
           uses: actions/checkout@v2
           with:
-            repository: Jprotobuf-rpc-socket
+            repository: tibaramadhan/Jprotobuf-rpc-socket
             submodules: 'true'
             #path: './depencies/vtk'
             ref: 4de9d3da1309d4366da36857b86f50a0c212ef71
