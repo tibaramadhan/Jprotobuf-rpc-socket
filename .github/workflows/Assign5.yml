@@ -19,7 +19,6 @@ jobs:
             distribution: 'adopt'
             cache: maven
        
-        - run: git checkout 4de9d3da1309d4366da36857b86f50a0c212ef71
         - run: mvn test-compile -pl jprotobuf-rpc-core -am
         - run: mvn -pl jprotobuf-rpc-core test -Dtest=com.baidu.jprotobuf.pbrpc.EchoServiceTest#testDynamiceTalkTimeout  
         - run: mvn -pl jprotobuf-rpc-core edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.baidu.jprotobuf.pbrpc.EchoServiceTest#testDynamiceTalkTimeout 
