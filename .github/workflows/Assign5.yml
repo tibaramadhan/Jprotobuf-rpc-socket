@@ -18,7 +18,6 @@ jobs:
             java-version: '8'
             distribution: 'adopt'
             cache: maven
-       
         - run: mvn test-compile -pl jprotobuf-rpc-core -am
         - run: mvn -pl jprotobuf-rpc-core test -Dtest=com.baidu.jprotobuf.pbrpc.EchoServiceTest#testDynamiceTalkTimeout  
         - run: mvn -pl jprotobuf-rpc-core edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.baidu.jprotobuf.pbrpc.EchoServiceTest#testDynamiceTalkTimeout 
